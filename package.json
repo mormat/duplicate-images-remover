@@ -1,0 +1,59 @@
+{
+  "name": "duplicate-images-remover",
+  "version": "0.0.1",
+  "description": "An desktop app to find and remove duplicates images",
+  "main": "src/main.js",
+  "keywords": [
+    "electron",
+    "electron-app"
+  ],
+  "author": "Mathieu MOREL",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/mormat/duplicate-images-remover",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mormat/duplicate-images-remover.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mormat/duplicate-images-remover/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "electron": "^29.1.0",
+    "electron-builder": "^23.6.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "react-svg-loader": "^3.0.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "electron-builder build --windows --linux AppImage",
+    "prepare": "webpack --mode=production",
+    "server": "nodemon ./src/back/server.js",
+    "start": "ELECTRON_ENV=development electron .",
+    "watch": "webpack --watch --mode=development"
+  },
+  "dependencies": {
+    "@mdbootstrap/bootstrap-dark-mode": "^1.0.2",
+    "bootstrap": "^5.3.3",
+    "byte-size": "^8.1.1",
+    "css-loader": "^6.10.0",
+    "friendly-img-hash-js": "^1.1.2",
+    "glob": "^10.3.10",
+    "image-size": "^1.1.1",
+    "imghash": "^0.0.9",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "yaml": "^2.4.1"
+  }
+}
