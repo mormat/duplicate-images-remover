@@ -2,4 +2,4 @@
 
 ![preview](docs/results.png)
 
-A desktop app (Linux/Windows) to find and remove duplicates images in a folder.
+A desktop app for Linux/Windows to find and remove duplicate images in a folder.
